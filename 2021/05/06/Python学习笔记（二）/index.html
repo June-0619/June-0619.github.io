@@ -16,7 +16,7 @@
 <meta property="og:description" content="python学习笔记（二）1.列表1）列表相当于其他语言中的数组 2）列表任意数据类型可以混存-更具包容性 123456lst&#x3D;[&amp;#x27;hello&amp;#x27;,&amp;#x27;world&amp;#x27;,98]print(id(lst))print(type(lst))print(lst)print(lst[0])#输出hello  3）列表的创建  直接使用[]括号 12lst1&#x3D;[&amp;#x27;h">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-06T13:24:52.000Z">
-<meta property="article:modified_time" content="2021-05-06T14:03:13.708Z">
+<meta property="article:modified_time" content="2021-05-06T18:46:16.279Z">
 <meta property="article:author" content="June">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
@@ -478,7 +478,7 @@
 <li><p>通过参数sep指定劈分字符串的劈分符</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s=<span class="string">&#x27;hello|world|python&#x27;</span></span><br><span class="line">lst=s.split(sep=<span class="string">&#x27;|&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(lst)</span><br><span class="line"><span class="comment">#[&#x27;hello&#x27;, &#x27;world&#x27;, &#x27;python&#x27;]</span></span><br></pre></td></tr></table></figure></li>
 <li><p>通过参数maxsplit指定劈分字符串时的最大劈分数，在经过最大劈分次数分之后，剩余的子串会单独做为一部分</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s=<span class="string">&#x27;hello|world|python&#x27;</span></span><br><span class="line">lst=s.split(sep=<span class="string">&#x27;|&#x27;</span>,maxsplit=<span class="number">1</span>)<span class="built_in">print</span>(lst)</span><br><span class="line"><span class="comment">#[&#x27;hello&#x27;, &#x27;world|python&#x27;]	</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s=<span class="string">&#x27;hello|world|python&#x27;</span></span><br><span class="line">lst=s.split(sep=<span class="string">&#x27;|&#x27;</span>,maxsplit=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(lst)</span><br><span class="line"><span class="comment">#[&#x27;hello&#x27;, &#x27;world|python&#x27;]	</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li><p>rsplit()</p>
